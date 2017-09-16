@@ -1,11 +1,29 @@
-# vue-esper
-
-> A Vue.js project
-
+# Esper Orbits
 
 ## Developement
- The default webpack dev server is replaced by the express server, run npm dev :P
-
+ The source code contains the API server and the frontend. 
+ To launch the api run `npm run dev-api`. Keep in mind this server will look for a `MONGODB_URI` or `MONGODB_URI_TEST` environment variable.
+ To launch the dev server with hot reload `npm start dev`
+ 
+ 
+## Testing
+  To test the api provide a MONGODB_URI_TEST environment variable and run `npm run test-api`
+  
+  To test the frontend `npm run test`
+  To only run unit tests `npm run unit-test`
+## Production 
+  
+  Step 1 Build the webapp
+  `npm build`
+  
+  Step 2 Provide environment variable
+  ```
+  NODE_ENV=production
+  MONGODB_URI=url
+  ```
+  Step 3 Run Express server
+  `npm run prod`
+  
 ## Build Setup
 
 ``` bash
