@@ -1,0 +1,6 @@
+/static
+/test
+/node_modules
+/config
+/build
+keys.sh
